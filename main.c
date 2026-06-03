@@ -22,7 +22,7 @@ void setUsername(char *name, int size, int *status){
     }
 }
 
-void setTitle(){
+void displayTitle(){
     myClear();
     printf("Welcome to mokaShell!\n");
 }
@@ -60,7 +60,7 @@ int main(void){
     int status = 1;
     char username[USERNAME_SIZE];
 
-    setTitle();
+    displayTitle();
     setUsername(username, sizeof(username), &status);
     myClear();
 
